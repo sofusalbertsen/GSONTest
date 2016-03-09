@@ -1,0 +1,6 @@
+{
+  "name": "sofus",
+  "address": "Nørrebrogade 145",
+  "grades": [2,4,6,8],
+  "best-friend":{"name":"esben","address":"Nørrebrogade 154"}
+}
