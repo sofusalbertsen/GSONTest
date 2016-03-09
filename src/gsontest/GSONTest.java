@@ -5,6 +5,8 @@
  */
 package gsontest;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
@@ -23,13 +25,12 @@ public class GSONTest {
      * @param args the command line arguments
      */
     public static void main(String[] args) throws FileNotFoundException {
-//        File f =new File("");
-//        System.out.println(new File("s").getAbsolutePath());        
+      
     //assignment 1
     JsonElement json = new JsonParser().parse(new FileReader("src/assignment1.json"));
-        System.out.println(json.getAsJsonObject().get("name").getAsString());
-        System.out.println(json.getAsJsonObject().get("grades").getAsJsonArray().size());
     
+    //Assignment 2;
+    Gson gson = new GsonBuilder().setPrettyPrinting().create();
     }
     
 }
